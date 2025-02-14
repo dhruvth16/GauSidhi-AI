@@ -53,7 +53,10 @@ function Navbar() {
                 text="Get Started"
                 size="md"
                 variant="primary"
-                onClick={() => setPopup(true)}
+                onClick={() => {
+                  // setPopup(true)
+                  navigate("/farmer-dashboard");
+                }}
               />
             </div>
           </div>
