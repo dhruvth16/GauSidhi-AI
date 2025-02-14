@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../ui/Button";
 import cowGif from "../../assets/cow-gif.gif";
 import { useNavigate } from "react-router-dom";
 

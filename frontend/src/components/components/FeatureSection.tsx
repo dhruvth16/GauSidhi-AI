@@ -6,7 +6,7 @@ import {
   Microscope,
   Smartphone,
 } from "lucide-react";
-import Card from "./Card";
+import Card from "../ui/Card";
 
 function FeatureSection() {
   return (

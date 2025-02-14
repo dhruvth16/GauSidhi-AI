@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Button from "./Button";
+import Button from "../ui/Button";
 
 function CtaSection() {
   const navigate = useNavigate();

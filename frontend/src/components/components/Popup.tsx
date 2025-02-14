@@ -10,7 +10,7 @@ interface PopupProps {
 function Popup({ popupRef, setPopup }: PopupProps) {
   return (
     <div
-      className="bg-purple-100 rounded-md p-4 invisible z-50 absolute top-15 right-15"
+      className="bg-purple-100 rounded-md p-4 invisible z-50 absolute top-20 right-50"
       ref={popupRef}
     >
       <div className="flex justify-between gap-4 w-full">

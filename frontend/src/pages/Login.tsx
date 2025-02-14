@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Cog as Cow, Eye, EyeOff } from "lucide-react";
+import Button from "../components/ui/Button";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -99,12 +100,12 @@ function Login() {
             </div>
 
             <div>
-              <button
+              <Button
+                variant="tertiary"
+                text="Sign in"
                 type="submit"
-                className="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                Sign in
-              </button>
+                size="lg"
+              />
             </div>
           </form>
 

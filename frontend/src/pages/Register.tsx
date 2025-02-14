@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Cog as Cow, Eye, EyeOff } from "lucide-react";
+import Button from "../components/ui/Button";
 
 function Register() {
   const [showPassword, setShowPassword] = useState(false);
@@ -8,7 +9,7 @@ function Register() {
     name: "",
     email: "",
     password: "",
-    farmName: "",
+    role: "",
     phoneNumber: "",
     agreeToTerms: false,
   });
@@ -129,20 +130,23 @@ function Register() {
                 htmlFor="farmName"
                 className="block text-sm font-medium text-gray-700"
               >
-                Farm name
+                Role
               </label>
               <div className="mt-1">
-                <input
-                  id="farmName"
-                  name="farmName"
-                  type="text"
+                <select
+                  id="role"
+                  name="role"
                   required
-                  value={formData.farmName}
+                  value={formData.role}
                   onChange={(e) =>
-                    setFormData({ ...formData, farmName: e.target.value })
+                    setFormData({ ...formData, role: e.target.value })
                   }
                   className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                />
+                >
+                  <option value="choose one">Choose one</option>
+                  <option value="farmer">Farmer</option>
+                  <option value="user">User</option>
+                </select>
               </div>
             </div>
 
@@ -197,12 +201,12 @@ function Register() {
             </div>
 
             <div>
-              <button
+              <Button
+                variant="tertiary"
+                text="Create account"
+                size="lg"
                 type="submit"
-                className="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                Create account
-              </button>
+              />
             </div>
           </form>
 
