@@ -9,8 +9,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src={logo} className="w-10 h-10" />
-              <span className="font-bold">AI Cow Breed Revival</span>
+              <img src={logo} className=" h-10" />
             </div>
             <p className="text-gray-400">
               Revolutionizing cattle farming with AI

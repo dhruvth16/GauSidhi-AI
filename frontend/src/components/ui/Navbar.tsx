@@ -36,12 +36,7 @@ function Navbar() {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <div>
-                <img src={logo} className="w-16 h-12 text-indigo-600" />
-              </div>
-              <div>
-                <span className="text-xl font-bold text-gray-800">
-                  GauSidhi - AI
-                </span>
+                <img src={logo} className=" h-12 text-indigo-600" />
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-8 transition-all">
